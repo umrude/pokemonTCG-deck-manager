@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --watch server.js",
+    "migrate": "knex migrate:latest",
+    "unmigrate": "knex migrate:rollback",
+    "seed": "knex seed:run "
   },
   "author": "",
   "license": "ISC",
@@ -19,6 +23,7 @@
     "nodemon": "^2.0.2",
     "pg": "^7.18.1",
     "pg-native": "^3.0.0",
+    "pokemontcgsdk": "^1.1.0",
     "socketio": "^1.0.0"
   }
 }
