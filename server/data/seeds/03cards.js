@@ -5,7 +5,7 @@ exports.seed = function(knex) {
     .then(function() {
       // Inserts seed entries
       return knex("cards").insert([
-        { id: 1, deck_id: 1, api_id: "dp6-90" },
+        { id: 1, deck_id: 1, api_id: "xy2-13" },
         { id: 2, deck_id: 1, api_id: "pop9-17" },
         { id: 3, deck_id: 1, api_id: "det1-4" },
         { id: 4, deck_id: 2, api_id: "dp6-90" },
