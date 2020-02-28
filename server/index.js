@@ -4,6 +4,7 @@ const bodyParser = require("body-parser");
 const app = express();
 const morgan = require("morgan");
 const db = require("./data/db.js"); // importing the db config
+const pokemon = require("pokemontcgsdk");
 
 app.use(morgan("dev"));
 
