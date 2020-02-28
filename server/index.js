@@ -19,6 +19,14 @@ app.get("/api/test", (req, res) =>
     message: "we gud"
   })
 );
+app.get("/api/search", (req, res) => {
+  let query = req.query.query;
+  console.log(query);
+  pokemon.card.all({ name: query }).on("data", card => {
+    console.log(card);
+    res.json(card);
+  });
+});
 
 app.listen(PORT, () => {
   console.log(`listening on port ${PORT}`);

@@ -3,6 +3,7 @@ import "./App.css";
 import Card from "./components/Card";
 import cardBack from "./imgs/Cardback.jpg";
 import axios from "axios";
+import Searchbar from "./components/Searchbar";
 
 const pokeCard = {
   id: "xyp-XY05",
@@ -13,12 +14,9 @@ const pokeCard = {
 };
 
 function App() {
-  const [img, setImg] = useState(cardBack);
-  const [name, setName] = useState(null);
-
   return (
     <div className="App">
-      <Card img={img} name={name}></Card>
+      <Searchbar></Searchbar>
     </div>
   );
 }
